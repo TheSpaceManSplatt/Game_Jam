@@ -1,0 +1,11 @@
+[gd_scene format=2]
+
+[node name="main menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1.0
+margin_right = -1.0
+rect_rotation = 0.0919848
+__meta__ = {
+"_edit_use_anchors_": false
+}
