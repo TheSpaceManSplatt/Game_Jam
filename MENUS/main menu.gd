@@ -1,9 +1,7 @@
 extends Control
 
 func _ready():
-	pass
-
-
+	$HBoxContainer/VBoxContainer/Play_button.grab_focus()
 
 func _on_Play_button_pressed():
 	pass # Replace with function body.
