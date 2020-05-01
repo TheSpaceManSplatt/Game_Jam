@@ -1,4 +1,6 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://MENUS/main menu.gd" type="Script" id=1]
 
 [node name="main menu" type="Control"]
 anchor_right = 1.0
@@ -6,6 +8,7 @@ anchor_bottom = 1.0
 margin_left = -1.0
 margin_right = -1.0
 rect_rotation = 0.0919848
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -36,3 +39,18 @@ size_flags_horizontal = 3
 margin_right = 1240.0
 margin_bottom = 20.0
 text = "PLAY"
+
+[node name="Info_button" type="Button" parent="HBoxContainer/VBoxContainer"]
+margin_top = 24.0
+margin_right = 1240.0
+margin_bottom = 44.0
+text = "INFO"
+
+[node name="Exit_button" type="Button" parent="HBoxContainer/VBoxContainer"]
+margin_top = 48.0
+margin_right = 1240.0
+margin_bottom = 68.0
+text = "EXIT"
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Play_button" to="." method="_on_Play_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Info_button" to="." method="_on_Info_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Exit_button" to="." method="_on_Exit_button_pressed"]
