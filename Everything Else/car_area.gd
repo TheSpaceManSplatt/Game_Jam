@@ -22,7 +22,7 @@ func _process(delta):
 		for body in bodies:
 			#let the hit the floor
 			if( body.get_name() == "Car"):
-				print( body._get_car_property() )
+				print( body._get_car_info() )
 			else:
 				print( body.get_name() )
 	return

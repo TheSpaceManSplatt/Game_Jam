@@ -15,5 +15,12 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+var timer = 0
+func _process(delta):
+	timer += delta
+	if( timer > 1 ):
+		timer = 0
+		reputation += 1
+		$HBoxContainer/Label.text = str(reputation)
+	
+	pass

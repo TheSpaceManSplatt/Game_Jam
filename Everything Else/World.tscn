@@ -1,19 +1,21 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Everything Else/Valet.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Everything Else/Valet.gd" type="Script" id=2]
 [ext_resource path="res://Everything Else/Car.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Everything Else/car_area.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Everything Else/World.gd" type="Script" id=5]
+[ext_resource path="res://In_Game_UI.tscn" type="PackedScene" id=6]
 
 [node name="World" type="Node2D"]
 script = ExtResource( 5 )
 
 [node name="Valet" parent="." instance=ExtResource( 1 )]
 position = Vector2( 37.4673, 34.4352 )
-script = ExtResource( 2 )
-
-[node name="Car" parent="Valet" instance=ExtResource( 3 )]
 
 [node name="car_area" parent="." instance=ExtResource( 4 )]
 position = Vector2( 123.668, 273.423 )
+
+[node name="Control" parent="." instance=ExtResource( 6 )]
+
+[node name="Car" parent="." instance=ExtResource( 3 )]
+position = Vector2( 239.464, 111.813 )

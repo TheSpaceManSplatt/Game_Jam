@@ -7,7 +7,7 @@
 radius = 30.0
 
 [node name="Car" type="KinematicBody2D"]
-position = Vector2( 201.997, 77.3779 )
+position = Vector2( 117.461, 61.2058 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
