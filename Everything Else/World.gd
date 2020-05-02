@@ -25,10 +25,26 @@ func _on_Timer_timeout():
 	#chance of removing a new car will go up with how many cars are in play
 	var add_car = randi()%11+1
 	var remove_car = randi()%11+1
+	var list_childs = get_children()
+	var car_list 
+	
 	if( add_car > 5 ):
 		#@todo link to car_area
 		print("make new car")
 	if( remove_car > 5 ):
 		#@todo link to car_area
 		print("remove car")
+		car_list = get_car_list()
+		print( car_list[randi() % car_list.size()] )
 	pass
+
+
+
+func get_car_list():
+	var car_list = []
+	var children = get_children()
+	for child in children:
+		if( "Car" in child.get_name() ):
+			car_list.append( child )
+
+	return car_list

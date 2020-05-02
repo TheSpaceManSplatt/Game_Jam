@@ -24,7 +24,9 @@ func enter_car():
 	
 	for body in bodies:
 		#let the hit the floor
+		#@todo add dirction to the playre so they get into the right car
 		if( "Car" in body.get_name()  ):
 			print( body._get_car_info() )
 			body._set_car_occupied("Player")
 			get_parent().remove_child(self)
+			break
