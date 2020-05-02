@@ -22,10 +22,10 @@ position = Vector2( 85.0861, 455.187 )
 position = Vector2( 239.464, 111.813 )
 
 [node name="Car2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 376.388, 157.232 )
+position = Vector2( 424.904, 146.206 )
 
 [node name="Car3" parent="." instance=ExtResource( 3 )]
-position = Vector2( 318.087, 289.268 )
+position = Vector2( 522.443, 149.6 )
 
 [node name="Car_spawner" parent="." instance=ExtResource( 2 )]
 position = Vector2( 739.148, 379.05 )
