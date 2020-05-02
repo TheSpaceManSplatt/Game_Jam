@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://MENUS/main menu.gd" type="Script" id=1]
-[ext_resource path="res://MENUS/background.png" type="Texture" id=2]
+[ext_resource path="res://final menu.png" type="Texture" id=2]
 [ext_resource path="res://MENUS/GO_BUTTON.png" type="Texture" id=3]
 
 [node name="main menu" type="Control"]
