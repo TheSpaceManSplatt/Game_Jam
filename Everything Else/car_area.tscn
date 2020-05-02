@@ -3,10 +3,10 @@
 [ext_resource path="res://Everything Else/car_area.gd" type="Script" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 0.272943, 0.55966 )
+extents = Vector2( 0.835964, 1.43757 )
 
 [node name="car_area" type="Node2D"]
-position = Vector2( 131.811, 470.338 )
+position = Vector2( 84.6554, 454.048 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true

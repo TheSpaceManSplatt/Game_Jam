@@ -21,10 +21,9 @@ func _process(delta):
 		timer = 0
 		for body in bodies:
 			#let the hit the floor
-			if( body.get_name() == "Car"):
-				print( body._get_car_info() )
-			else:
-				print( body.get_name() )
+			if( "Car" in body.get_name() ):
+				if( body._get_car_called_for() and body._get_car_occupied() == "Not" ):
+					body.get_parent().remove_child(body)
 	return
 
 

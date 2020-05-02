@@ -30,12 +30,13 @@ func _on_Timer_timeout():
 	
 	if( add_car > 5 ):
 		#@todo link to car_area
-		print("make new car")
+		#print("make new car")
+		pass
 	if( remove_car > 5 ):
 		#@todo link to car_area
-		print("remove car")
+		#print("remove car")
 		car_list = get_car_list()
-		print( car_list[randi() % car_list.size()] )
+		car_list[randi() % car_list.size()]._set_car_called_for(true)
 	pass
 
 

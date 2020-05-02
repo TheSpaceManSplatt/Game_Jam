@@ -1,6 +1,7 @@
 extends KinematicBody2D
 onready var VALLET = preload("res://Everything Else/Valet.tscn")
 onready var info = "Id 10000"
+onready var called_for = false
 onready var occupied = "Not"
 onready var leavable = false
 const MOVE_SPEED = 600
@@ -8,6 +9,8 @@ const MOVE_SPEED = 600
 func _physics_process(delta):	
 	if( occupied == "Player"):
 		movement( delta )
+	if( called_for ):
+		$Sprite.modulate = Color(1,0,0)
 
 func movement( delta ):
 	var move_vec = Vector2()
@@ -44,9 +47,14 @@ func _get_car_info():
 func _set_car_info( data ):
 	info = data
 	
-#global data 
 func _get_car_occupied():
 	return occupied
 	
 func _set_car_occupied( data ):
 	occupied = data
+	
+func _get_car_called_for():
+	return called_for
+	
+func _set_car_called_for( data ):
+	called_for = data
