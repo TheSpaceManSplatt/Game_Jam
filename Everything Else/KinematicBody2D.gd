@@ -4,6 +4,7 @@ onready var info = "Id 10000"
 onready var called_for = false
 onready var occupied = "Not"
 onready var leavable = false
+onready var returned = false
 const MOVE_SPEED = 600
 
 func _physics_process(delta):	
@@ -11,6 +12,9 @@ func _physics_process(delta):
 		movement( delta )
 	if( called_for ):
 		$Sprite.modulate = Color(1,0,0)
+	if( returned ):
+		take_it_away()
+
 
 func movement( delta ):
 	var move_vec = Vector2()
@@ -58,3 +62,6 @@ func _get_car_called_for():
 	
 func _set_car_called_for( data ):
 	called_for = data
+
+func take_it_away():
+	pass
