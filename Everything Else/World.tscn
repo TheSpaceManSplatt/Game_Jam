@@ -19,3 +19,9 @@ position = Vector2( 123.668, 273.423 )
 
 [node name="Car" parent="." instance=ExtResource( 3 )]
 position = Vector2( 239.464, 111.813 )
+
+[node name="Car2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 376.388, 157.232 )
+
+[node name="Car3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 318.087, 289.268 )

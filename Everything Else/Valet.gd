@@ -24,7 +24,7 @@ func enter_car():
 	
 	for body in bodies:
 		#let the hit the floor
-		if( body.get_name() == "Car"):
+		if( "Car" in body.get_name()  ):
 			print( body._get_car_info() )
 			body._set_car_occupied("Player")
 			get_parent().remove_child(self)
