@@ -7,13 +7,13 @@
 script = ExtResource( 2 )
 
 [node name="spawn_location4" parent="." instance=ExtResource( 1 )]
-position = Vector2( -3.05176e-05, -194.94 )
+position = Vector2( 52.4263, 400.002 )
 
 [node name="spawn_location3" parent="." instance=ExtResource( 1 )]
-position = Vector2( 0, -97.4701 )
+position = Vector2( 60.3885, 290.186 )
 
 [node name="spawn_location2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 0, -0.902512 )
+position = Vector2( 52.5966, 174.419 )
 
 [node name="spawn_location1" parent="." instance=ExtResource( 1 )]
-position = Vector2( 0, 96.5676 )
+position = Vector2( 54.5984, 70.9789 )
