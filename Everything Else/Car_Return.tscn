@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Everything Else/car_area.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Everything Else/Car_Return.gd" type="Script" id=2]
+
+[node name="Car_Return" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="car_area" parent="." instance=ExtResource( 1 )]
+position = Vector2( 115.811, 61.3382 )
+
+[node name="car_area2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 115.811, 293.338 )
+
+[node name="car_area3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 115.811, 177.338 )
+
+[node name="car_area4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 115.811, -52.6618 )

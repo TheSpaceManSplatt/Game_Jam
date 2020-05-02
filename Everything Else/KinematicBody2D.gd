@@ -1,5 +1,6 @@
 extends KinematicBody2D
 
+onready var info = "Id 10000"
 const MOVE_SPEED = 600
 
 func _physics_process(delta):
@@ -14,3 +15,10 @@ func _physics_process(delta):
 		move_vec.x += 1
 	move_vec = move_vec.normalized()
 	move_and_collide(move_vec * MOVE_SPEED * delta)
+
+
+func _get_car_property():
+	return info
+	
+func _set_car_property( data ):
+	info = data
