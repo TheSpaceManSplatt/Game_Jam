@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Game_Jam"
-config/icon="res://icon.png"
+run/main_scene="res://Everything Else/World.tscn"
 
 [autoload]
 

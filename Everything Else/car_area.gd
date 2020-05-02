@@ -12,15 +12,23 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+var timer = 0
+func _process(delta):
+	var bodies = $Area2D.get_overlapping_bodies()
+	
+	timer += delta
+	if( timer > 1 ):
+		timer = 0
+		for body in bodies:
+			#let the hit the floor
+			if( body.get_name() == "Car"):
+				print( body._get_car_property() )
+			else:
+				print( body.get_name() )
+	return
 
 
 
 
 func _on_Area2D_mouse_entered():
-	var bodies = $Area2D.get_overlapping_bodies()
-	for body in bodies:
-		#let the hit the floor
-		print( body.get_name() )
 	pass # Replace with function body.
