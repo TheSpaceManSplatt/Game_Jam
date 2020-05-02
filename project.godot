@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Game_Jam"
-run/main_scene="res://Everything Else/World.tscn"
+run/main_scene="res://MENUS/main menu.tscn"
 
 [autoload]
 
