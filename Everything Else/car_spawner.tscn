@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Everything Else/spawn_spot.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Everything Else/car_spawner.gd" type="Script" id=2]
+
+[node name="Car_spawner" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="spawn_location4" parent="." instance=ExtResource( 1 )]
+position = Vector2( -3.05176e-05, -194.94 )
+
+[node name="spawn_location3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, -97.4701 )
+
+[node name="spawn_location2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, -0.902512 )
+
+[node name="spawn_location1" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, 96.5676 )

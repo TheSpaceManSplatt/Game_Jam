@@ -13,7 +13,6 @@ func _ready():
 	_timer.set_one_shot(false) # Make sure it loops
 	_timer.start()
 
-
 func _on_Timer_timeout():
 	# should send radome type of car at random speeds to player
 	# the car_area will return an time that should be added to a
@@ -30,8 +29,7 @@ func _on_Timer_timeout():
 	
 	if( add_car > 5 ):
 		#@todo link to car_area
-		#print("make new car")
-		pass
+		print( $Car_spawner.spawn_new_car() )
 	if( remove_car > 5 ):
 		#@todo link to car_area
 		#print("remove car")
@@ -46,6 +44,7 @@ func get_car_list():
 	var children = get_children()
 	for child in children:
 		if( "Car" in child.get_name() ):
-			car_list.append( child )
+			if( !( "spawner" in child.get_name() ) ):
+				car_list.append( child )
 
 	return car_list
