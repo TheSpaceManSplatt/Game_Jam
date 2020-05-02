@@ -4,16 +4,17 @@
 [ext_resource path="res://Everything Else/car_spawner.gd" type="Script" id=2]
 
 [node name="Car_spawner" type="Node2D"]
+position = Vector2( -6.02936, -10.0082 )
 script = ExtResource( 2 )
 
 [node name="spawn_location4" parent="." instance=ExtResource( 1 )]
-position = Vector2( 52.4263, 400.002 )
+position = Vector2( 266.379, 71.9754 )
 
 [node name="spawn_location3" parent="." instance=ExtResource( 1 )]
-position = Vector2( 60.3885, 290.186 )
+position = Vector2( 206.6, 77.651 )
 
 [node name="spawn_location2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 52.5966, 174.419 )
+position = Vector2( 114.936, 72.2609 )
 
 [node name="spawn_location1" parent="." instance=ExtResource( 1 )]
 position = Vector2( 54.5984, 70.9789 )

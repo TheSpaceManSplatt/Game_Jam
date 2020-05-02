@@ -9,13 +9,16 @@ height = 71.3951
 
 [node name="Car" type="KinematicBody2D"]
 position = Vector2( 100.103, 64.9793 )
+rotation = 1.58173
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="."]
+rotation = -1.5708
 texture = ExtResource( 1 )
 
 [node name="CarCollision" type="CollisionShape2D" parent="."]
+rotation = 1.5708
 shape = SubResource( 1 )

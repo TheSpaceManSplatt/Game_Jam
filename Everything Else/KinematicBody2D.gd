@@ -7,12 +7,20 @@ onready var leavable = false
 onready var returned = false
 
 var wheel_base = 70
-var steering_angle = 15
+
+var angles = [1,3,5,7,10] #list to choose from
+var steering_angle = angles[randi() % angles.size()]
+
+var speeds = [200,400,500,800]
+var spud = speeds[randi() % speeds.size()]
 
 var velocity = Vector2.ZERO
 var steer_direction
 
-const MOVE_SPEED = 600
+const MOVE_SPEED = 500
+
+
+
 
 func _physics_process(delta):	
 	if( occupied == "Player"):
@@ -41,7 +49,7 @@ func get_input():
 	steer_direction = turn * steering_angle
 	velocity = Vector2.ZERO
 	if Input.is_action_pressed("drive_forward"):
-		velocity = transform.x * 400
+		velocity = transform.x * spud
 		
 func calculate_steering(delta):
 	var rear_wheel = position - transform.x * wheel_base/2.0

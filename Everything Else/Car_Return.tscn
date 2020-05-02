@@ -7,13 +7,13 @@
 script = ExtResource( 2 )
 
 [node name="car_area" parent="." instance=ExtResource( 1 )]
-position = Vector2( 115.811, 61.3382 )
+position = Vector2( 408.764, 139.66 )
 
 [node name="car_area2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 115.811, 293.338 )
+position = Vector2( 595.769, 143.901 )
 
 [node name="car_area3" parent="." instance=ExtResource( 1 )]
-position = Vector2( 115.811, 177.338 )
+position = Vector2( 230.087, 142.176 )
 
 [node name="car_area4" parent="." instance=ExtResource( 1 )]
-position = Vector2( 115.811, -52.6618 )
+position = Vector2( 77.1331, 144.244 )
