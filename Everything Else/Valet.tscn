@@ -4,22 +4,24 @@
 [ext_resource path="res://Everything Else/Valet.gd" type="Script" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 20.0
+radius = 13.931
 
 [sub_resource type="CircleShape2D" id=2]
-radius = 40.0982
+radius = 18.826
 
 [node name="Valet" type="KinematicBody2D"]
 position = Vector2( 37.4673, 24.4352 )
 script = ExtResource( 2 )
 
-[node name="ValetCollision" type="CollisionShape2D" parent="."]
-shape = SubResource( 1 )
-
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
+
+[node name="ValetCollision" type="CollisionShape2D" parent="."]
+position = Vector2( 0.349655, 5.41957 )
+shape = SubResource( 1 )
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 0.17485, 5.59439 )
 shape = SubResource( 2 )
