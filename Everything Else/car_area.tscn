@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://car_area.gd" type="Script" id=1]
+[ext_resource path="res://Everything Else/car_area.gd" type="Script" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 0.272943, 0.55966 )
