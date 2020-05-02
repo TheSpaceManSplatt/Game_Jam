@@ -23,7 +23,7 @@ func _process(delta):
 			#let the hit the floor
 			if( "Car" in body.get_name() ):
 				if( body._get_car_called_for() and body._get_car_occupied() == "Not" ):
-					body.get_parent().remove_child(body)
+					body._set_car_retured()
 	return
 
 

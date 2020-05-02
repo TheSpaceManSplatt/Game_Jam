@@ -5,7 +5,6 @@ radius = 20.0
 
 [sub_resource type="StreamTexture" id=2]
 flags = 4
-load_path = "res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex"
 
 [node name="Valet" type="KinematicBody2D"]
 position = Vector2( 37.4673, 24.4352 )

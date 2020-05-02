@@ -43,6 +43,9 @@ func leave_car():
 	get_parent().add_child( vallet )
 	vallet.position = self.position
 	
+func take_it_away():
+	get_parent().remove_child(self)
+	pass
 
 #global data 
 func _get_car_info():
@@ -63,5 +66,6 @@ func _get_car_called_for():
 func _set_car_called_for( data ):
 	called_for = data
 
-func take_it_away():
-	pass
+func _set_car_retured():
+	returned = true
+
